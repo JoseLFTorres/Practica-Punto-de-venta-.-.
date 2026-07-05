@@ -32,17 +32,19 @@ namespace Punto.Forms
             // 
             this.txtUser.Location = new System.Drawing.Point(30, 48);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(240, 20);
+            this.txtUser.Size = new System.Drawing.Size(240, 22);
             this.txtUser.TabIndex = 1;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(30, 108);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(240, 20);
+            this.txtPassword.Size = new System.Drawing.Size(240, 22);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // btnLogin
             // 
